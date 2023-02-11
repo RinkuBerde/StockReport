@@ -2,7 +2,7 @@
   "stocksList": [
     {
       "StockName": "HDFC",
-      "shares": 11,
+      "shares": 8,
       "Price": 110
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "StockName": "Binance",
-      "shares": 3,
+      "shares": 2,
       "Price": 180
     },
     {
@@ -26,9 +26,14 @@
       "Price": 39
     },
     {
-      "StockName": "Reliance",
+      "StockName": "fdf",
       "shares": 2,
-      "Price": 40
+      "Price": 424
+    },
+    {
+      "StockName": "Alphabet Company",
+      "shares": 3,
+      "Price": 50
     }
   ]
 }

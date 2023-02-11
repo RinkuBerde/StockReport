@@ -2,12 +2,10 @@
 
 namespace StockReport
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-            //Creating obj for StockManager
+        {//Creating obj for StockManager
             StockManager stockManager = new StockManager();
             //getting path of json file
             string file = @"C:\Users\RINKU\Desktop\Day6\StockReport\StockReport\Stock.json";
@@ -61,6 +59,7 @@ namespace StockReport
                         Console.WriteLine("Enter company name in which you want to buy share: ");
                         string companyname = Console.ReadLine();
                         stockManager.Buy(amount, companyname);
+                        File.WriteAllText(acc, JsonConvert.SerializeObject(accountUtility));
                         break;
                     case 3:
                         Console.WriteLine("Enter amount: ");
@@ -68,14 +67,13 @@ namespace StockReport
                         Console.WriteLine("Enter company name in which you want to sell share: ");
                         string companyname1 = Console.ReadLine();
                         stockManager.Sell(amount1, companyname1);
+                        File.WriteAllText(acc, JsonConvert.SerializeObject(accountUtility));
                         break;
                     case 4:
-                        stockManager.StockPurchased();
-                        stockManager.StockSold();
                         stockManager.DateandTime();
                         break;
                 }
-                Console.WriteLine("\nDo you want to continue?(Y/N)");
+                Console.WriteLine("Do you want to continue?(Y/N)");
                 flag = Console.ReadLine();
             }
         }

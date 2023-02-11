@@ -9,7 +9,6 @@ namespace StockReport
     class AccountUtility
     {
         public List<Account> AccountList { get; set; }
-
         public class Account
         {
             public string Stockholder { get; set; }
