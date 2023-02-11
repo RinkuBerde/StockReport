@@ -17,12 +17,6 @@
       "StockName": "HDFC",
       "shares": 3,
       "Price": 10
-    },
-    {
-      "Stockholder": "abc",
-      "StockName": "Dell",
-      "shares": 1,
-      "Price": 12000
     }
   ]
 }
